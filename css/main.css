@@ -42,17 +42,12 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: #9DBFDA;
-}
-
-header {
-  background: #00285A;
-  margin: 0 auto;
-}
-
-.active {
-  color: #FF5661;
 }
 
 header {
@@ -62,17 +57,67 @@ header {
   padding: 10px;
   background-color: #00285A;
   padding: 1em;
+  margin: 0 auto;
 }
 header .logo {
   display: flex;
   align-content: center;
   color: #9DBFDA;
 }
-header .login {
-  background: #fff;
-  padding: 1em;
-  margin: 0px;
+header .buttons {
+  display: flex;
+  padding: 0.5em;
+}
+header .buttons .login {
+  padding: 1rem;
+}
+header .buttons .login button {
+  width: 178px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  background: #00C7FD;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 4.482px;
+}
+header .buttons .singup button {
+  background-color: #FF5661;
 }
 header nav {
-  display: inline-block;
+  padding: 0.5rem;
+  color: #fff;
+}
+header nav .active {
+  font-size: 1.5em;
+}
+header nav .active a {
+  color: #FF5661;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 4.482px;
+}
+header nav li {
+  float: left;
+  padding-left: 8em;
+}
+header nav li a {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 4.482px;
 }/*# sourceMappingURL=main.css.map */

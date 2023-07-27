@@ -42,47 +42,113 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
+  a{
+    text-decoration: none;
+  }
+
+// Varibles
+// ---Colors--
+  $Base-Color: #fff;
+  $primary-Color: #00C7FD;
+  $secondary-Color: #FF5661;
+  $dark-Blue: #00285A;
+  $light-Blue:#9DBFDA;
+
+  // Button
+  $black: #000 !default;
+  $border-radius: 0.25rem !default;
+  $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 
 
 
 // Body Styling
 
-body{
-    background: #9DBFDA;
-}
+  body{
+      background: $light-Blue;
+  } 
 
-
-header {
-    background: #00285A;
-    margin: 0 auto;
-  }
-  
-  .active {
-    color: #FF5661;
-  }
-  
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #00285A;
+    background-color: $dark-Blue;
     padding: 1em;
+    margin: 0 auto;
 
     .logo {
         display: flex;
         align-content: center;
-        color: #9DBFDA;
+        color: $light-Blue;
       }
 
-      .login{
-        background:#fff;
-        padding: 1em;
-        margin: 0px;
-      }
+      .buttons{
+        display: flex;
+        padding: 0.5em;
+
+          .login{
+            padding: 1rem;
+              button{
+              width: 178px;
+              height: 48px;
+              flex-shrink: 0;
+              border-radius: 8px;
+              border: none;
+              background: $primary-Color;
+              color: $Base-Color;
+              text-align: center;
+              font-family: Inter;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px; /* 133.333% */
+              letter-spacing: 4.482px;
+              }
+            }
+
+          .singup{
+              button{
+              background-color: $secondary-Color;
+              }
+            }
+        }
 
       nav{
-        display: inline-block;
+      padding: 0.5rem;
+      color:#fff;
+    
+      .active{
+        font-size: 1.5em;
+        a{
+          color: $secondary-Color;
+          text-align: center;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 133.333% */
+          letter-spacing: 4.482px;
+        }
       }
+
+      li{
+          float: left;
+          padding-left: 8em;
+          a{
+            color: $Base-Color;
+            text-align: center;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 133.333% */
+            letter-spacing: 4.482px;
+          }
+        }
+      
+      }
+
   }
+
+  
   
