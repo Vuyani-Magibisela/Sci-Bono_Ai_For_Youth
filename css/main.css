@@ -120,4 +120,38 @@ header nav li a {
   font-weight: 500;
   line-height: 24px; /* 133.333% */
   letter-spacing: 4.482px;
+}
+
+main {
+  display: grid;
+}
+main #cta {
+  display: grid;
+  grid-template-columns: 2fr;
+}
+main #cta .cta_Content {
+  grid-column: 1/2;
+  padding: 5em;
+}
+main #cta .cta_Content h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 53.333% */
+  letter-spacing: -0.495px;
+  margin-bottom: 2em;
+}
+main #cta .cta_Content p {
+  color: #1E1E1E;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.22px;
+}
+main #cta .cta_Img {
+  grid-column: 2/3;
 }/*# sourceMappingURL=main.css.map */

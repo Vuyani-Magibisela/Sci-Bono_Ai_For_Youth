@@ -58,7 +58,7 @@
   $black: #000 !default;
   $border-radius: 0.25rem !default;
   $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
-
+  
 
 
 // Body Styling
@@ -150,5 +150,40 @@
 
   }
 
-  
-  
+
+  main{
+    display: grid;
+    #cta{
+      display: grid;
+      grid-template-columns: 2fr;
+
+      .cta_Content{
+        grid-column: 1/2;
+        padding: 5em;
+
+        h1{
+          color: $black;
+          font-family: Poppins;
+          font-size: 45px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 53.333% */
+          letter-spacing: -0.495px;
+          margin-bottom: 2em;
+        }
+        p{
+          color: #1E1E1E;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 30px */
+          letter-spacing: -0.22px;
+        }
+      }
+      .cta_Img{
+        grid-column: 2/3;
+      }
+    }
+
+  }
